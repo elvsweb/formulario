@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Eater&family=League+Spartan:wght@100..900&family=Lilita+One&display=swap');
+        </style>
+        <link rel="shortcut icon" href="favicon.ico" type="favicon">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="text-center">Bem vindo!</h1>
+            <p class="text-center">Obrigado por tirar seu tempo para nos ajudar a melhorar!</p>
+        </header>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label id="nome" for="nome">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Nome" required>
+            </div>
+            <div class="form-group">
+                <label id="email" for="email">Email</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label id="idade" for="idade">Idade<span class="clue">(opcional)</span></label>
+                <input type="text" name="idade" id="idade" class="form-control" placeholder="Idade">
+            </div>
+            <div class="form-group">
+                <label id="pergunta" for="pergunta">Qual a função que você agregaria em nosso site?</label>
+                <input type="text" name="pergunta" id="idade" class="form-control" required>
+            </div>
+            <button type="submit" id="submit" class="submit-button" onclick="MyFunction()">ENVIAR</button>
+        </form>
+    </div>
+</body>
+</html>
